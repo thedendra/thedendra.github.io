@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Permanent+Marker&display=swap');
+
+
+:root {
+    --bcolor: rgb(41, 41, 41);
+    --dcolor: rgba(153, 205, 50, 0.438);
+    --undelay: 2s;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    text-align: center;
+    background-color: var(--bcolor);
+    font-family: 'Comfortaa';
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes dendranim {
+    0% {
+        font-size: 10pt;
+        color: var(--bcolor);
+        
+    }
+
+    70% {
+        color: var(--bcolor);
+    }
+
+    100% {
+        font-size: 15vw ;
+        color: var(--dcolor);
+        text-shadow: black;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+}
+
+@keyframes messanim {
+    0% {
+        color: var(--bcolor);
+    }
+
+    100% {
+        color: rgb(151, 151, 151);
+    }
+}
+
+.tomag {
+    font-size: 200pt;
+    color: var(--dcolor);
+    
+    animation-name: dendranim;
+    animation-duration: var(--undelay);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.almag {
+    font-size: 3vmin;
+    
+    color: var(--bcolor);
+    animation-name: messanim;
+    animation-delay: var(--undelay);
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+/* Medias */
+
+@media only screen and (max-width: 850px) {
+    .almag {
+        font-size: 3vmax;
+    }
+}
