@@ -11,24 +11,43 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
 }
 
 body {
-    height: 100%;
+    height: 100vh;
     text-align: center;
     background-color: var(--bcolor);
     font-family: 'Comfortaa';
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0px;
+    padding: 5%;
+    
+}
+
+body > a {
+    position: relative;
+    bottom: 1vw;
+    right: 1vw;
+    color: var(--dcolor);
+    align-self: flex-end;
+    justify-self: end;
+    order: 3;
+}
+
+body > a:link {
+    text-decoration: none;
+    
 }
 
 @keyframes dendranim {
     0% {
         font-size: 10pt;
         color: var(--bcolor);
-        
+        margin-top: 0px;
     }
 
     70% {
@@ -39,8 +58,8 @@ body {
         font-size: 15vw ;
         color: var(--dcolor);
         text-shadow: black;
-        margin-bottom: 10px;
-        margin-top: 0px;
+        margin-bottom: 2vh;
+        margin-top: auto;
     }
 }
 
@@ -57,16 +76,19 @@ body {
 .tomag {
     font-size: 200pt;
     color: var(--dcolor);
-    
+    order: 1;
     animation-name: dendranim;
     animation-duration: var(--undelay);
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    margin: auto auto auto auto;
+    justify-self: center;
+    align-self: center;
 }
 
 .almag {
     font-size: 3vmin;
-    
+    order: 2;
     color: var(--bcolor);
     animation-name: messanim;
     animation-delay: var(--undelay);
@@ -75,7 +97,13 @@ body {
     animation-fill-mode: forwards;
 }
 
-
+.beta {
+    margin: auto 0px 0px auto;
+    justify-self: flex-end;
+    align-self: flex-end;
+    font-size: 2vmax;
+    
+}
 
 
 
@@ -84,8 +112,13 @@ body {
 
 /* Medias */
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1024px) {
     .almag {
         font-size: 3vmax;
+    }
+
+    .beta {
+        margin: auto auto 0px auto;
+        font-size: 4vmin;
     }
 }
