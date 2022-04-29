@@ -1,17 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <script src="index.js"></script>
+        <link rel="stylesheet" onload="sizeList(mediaQuery), cookieCheat('show'), products()" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="icon" type="image/png" href="assets\greenhouse_smalllogo_croped.png">
 
-    <link rel="stylesheet" href="index.css"/>
-    <title>Δένδρα</title>
-</head>
-<body>
-    <p class="tomag">Δένδρα</p>
-    <p class="almag">Hold on, the website is currently down.</p>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Δένδρα - Dendra</title>
+    </head>
+    <body>
+        <!--<nav class="mainnav" role="navigation" data-hires="false" id="globalbar">
+            <div class="navelem">-->
+                
+            <!--</div>
+        </nav>-->
 
-    <a class="beta" href="https://thedendra.github.io/betachannel/">beta channel</a>
-</body>
+
+        <div class="maincon" id="maincon">
+            <div class="webcover">
+                <div>
+                    <h3>Δένδρα</h3>
+                    <p>High Quality, Sustainable, Smart Home Automation.</p>
+                </div>
+            </div>
+            <div class="mottol perfect">
+                <div class="mottocon conl">
+                    <h2>Meet the perfection.</h2>
+                    <p class="mottopar">Our products are designed to offer you the best experience possible. Discover the next-gen automation system for your home, made directly by our local industries with our own materials. No importing, no threats. With our setups you have the full control of every single part of your house, with the best stability and durability you  could fond in the market.</p>
+                    <button class="buynowli bright">Discover Products</button>
+                </div>
+            </div>
+            <div class="mottor ecolo">
+                <div class="mottocon conr">
+                    <h2>Light as the light.</h2>
+                    <p class="mottopar">So, what's a footprint? We actually know, our products don't. We use only 100% sustainable materials, like recycled ones or ones from sustainable production. Our OSes have ultra-green settings, with the capability of super energy saving working with every kind of environment. Less waste, less pollution, less cost. A simple step that makes the difference both for you and for the environment.</p>
+                    <button class="buynowli bleft">Discover Products</button>
+                </div>
+            </div>
+            <div class="mottol respons">
+                <div class="mottocon conl">
+                    <h2>House at a whisper.</h2>
+                    <p class="mottopar">Lock a door, switch on a lamp, set a timer for the cake. The age has changed: nothing will stop you from having the power on every single corner of your house. All of this, just with a basic system. Old house? Don't worry, certain times also old problems require modern solution, and we're the answer. Here's another point in the list of why you should choose us.</p>
+                    <button class="buynowli bright">Discover Products</button>
+                </div>
+            </div>
+            <div class="mottor stabil">
+                <div class="mottocon conr">
+                    <h2>Stability? We got you that.</h2>
+                    <p class="mottopar">Woah! Heard that? 10GB/s. Of course you can't, but sometimes also the most hidden things make the difference. Get everything you want right where and when you want, with the lowest latency in this world. Make each of your plan go at its best, either if it's a laser party or a simple morning alarm. Guess what? File transfer and cloud. Yes, we did it. This speed applies also on this job. Not convinced yet? Keep reading!</p>
+                    <button class="buynowli bleft">Discover Products</button>
+                </div>
+            </div>
+            <div class="mottol secur">
+                <div class="mottocon conl">
+                    <h2>We use Linux, btw.</h2>
+                    <p class="mottopar">Big projects need stable roots, they said. Here's the point. Have you ever wondered how to centralize speed, stability, security, smoothness, versatility or even durability? Linux. The answer is Linux. We fork our OSes' kernel directly from their main repositories, with the support of the Arch community. Nothing will stop you from exploring. No errors can be made, it's just simple as that. No one can steal what's yours, of course.</p>
+                    <button class="buynowli bright">Discover Products</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="mainfoot">
+            <ul>
+                <li class="footlinks">
+                    <a href="https://instagram.com/thedendra">
+                        <div>
+                            <img src="assets\instagram.png"/>
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/thedendra">
+                        <div>
+                            <img src="assets\twitter.png"/>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCPphIyQRmHFeTqxh99kYq2g">
+                        <div>
+                            <img src="assets\youtube.png"/>
+                        </div>
+                    </a>
+                    <a href="https://github.com/thedendra">
+                        <div>
+                            <img src="assets\github.png"/>
+                        </div>
+                    </a>
+                    <a href="mailto:greenhouse.project.ghp@gmail.com">
+                        <div>
+                            <img src="assets\email.png"/>
+                        </div>
+                    </a>
+                </li>
+                <li class="foottext">
+                    <h2>Contributors:</h2>
+                    <p>Ginevra Astori</p>
+                    <p>Alice Belotti</p>
+                    <p>Giovanni Gotti</p>
+                    <p>Davide Mora</p>
+                </li>
+                <li class="footdiscl">
+                    <p>This project is fully open-source.<br>Visit our GitHub page to use our code!</p>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <ul class="ulli">
+            <li class="llimg" onclick="homepage()">
+                <img class="navimg" src="/assets/greenhouse_smalllogo_croped.png"/>
+            </li>
+            <li class="lli"><a href="/what/">What</a></li>
+            <li class="lli"><a href="/why/">Why</a></li>
+            <li class="lli"><a href="/how/">How</a></li>
+            <li class="lli"><a href="/who/">Who</a></li>
+            
+            <button class="buynowli" onclick="window.location.href = '/discprs/'">Discover Products</button>
+        </ul>
+
+        <ul class="ullimob" onmousewheel="hdmbbar(), hdmbbartxt(), clrmbmenu()">
+            <!--<li class="llimgmob">
+                <img class="navimg menumob" src="assets\menumob.png">
+            </li>-->
+            <li class="llimob">
+                <a id="mobmenush" onclick="shwmbbar(), shwmbbartxt(), mobmenutxtpad(4)">Δένδρα</a>
+            </li>
+        </ul>
+
+        <ul id="mobshwn"  onclick="hdmbbar(), hdmbbartxt(), clrmbmenu()">
+            <li id="xtxt" class="txtt">
+                <a href="./what/">What</a>
+            </li>
+            <li id="xtxt1" class="txtt">
+                <a href="./why/">Why</a>
+            </li>
+            <li id="xtxt2" class="txtt">
+                <a href="./how/">How</a>
+            </li>
+            <li id="xtxt3" class="txtt">
+                <a href="./who/">Who</a>
+            </li>
+        </ul>
+
+        <div id="cookies">
+            <h1 class="cook cookhea" id="cookhea">We don't use third parts cookies.</h1>
+            <p class="cook cookpar" id="cookpar">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button id="cookbut" onclick="cookieCheat('hide')">I understood</button>
+        </div>
+        
+    </body>
 </html>
