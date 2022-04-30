@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="../index.js"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" onload="sizeList(mediaQuery), cookieCheat('show')" href="../index.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="icon" type="image/png" href="../assets/greenhouse_smalllogo_croped.png">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Δένδρα | Who</title>
+    </head>
+    <body>
+        <!--<nav class="mainnav" role="navigation" data-hires="false" id="globalbar">
+            <div class="navelem">-->
+                
+            <!--</div>
+        </nav>-->
+
+
+        <div class="maincon" id="maincon">
+            <div class="webcover">
+                <div>
+                    <h3>Here we are</h3>
+                    <p>We're not perfect, we're just trying to be as good as that.</p>
+                </div>
+            </div>
+            <div class="person mottocon">
+                <img src="/assets/greenhouse_smallogo_extended.png"/>
+                <div class="pdescr">
+                    <h2>Δένδρα</h2>
+                    <p>We are Alice, Ginevra, Giovanni and Davide, four teenagers who wanted to develop a completely eco-sustainable Home Automation System. We called our project “Dendra”, which in ancient Greek means “tree”. Trees are the source of life of our planet, our planet is our home and that’s why we must respect it starting from the sustainability of our houses. We used to consider pollution as a phenomenon outside our home, thinking about smog, deforestation and air and water pollution. Most  people do not know that our houses pollute 7 times more than our cars!</p>
+                </div>
+            </div>
+            <div class="person mottocon">
+                <img src="/assets/gastori.png"/>
+                <div class="pdescr">
+                    <h2>Ginevra Astori</h2>
+                    <p>I'm Ginevra Astori, I'm 15 and I live in Bergamo. I attend classical high school and I love sports. In fact, I love to practice it outdoors and for this reason I want, indeed my mates and I, to deal with this great topic, fundamental in our life</p>
+                </div>
+            </div>
+            <div class="person mottocon">
+                <img src="/assets/abelotti.png"/>
+                <div class="pdescr">
+                    <h2>Alice Belotti</h2>
+                    <p>I’m Alice Belotti, I’m fifteen and I’m from Bergamo, Italy. I love swimming, I like the feeling of floating in water. I love the sea and nature, respect for the environment is very important to me as to my workmates, that’s why I really liked the idea of developing something that could bring benefits to the environment and our lives.</p>
+                </div>
+            </div>
+            <div class="person mottocon">
+                <img src="/assets/ggotti.png"/>
+                <div class="pdescr">
+                    <h2>Giovanni Gotti</h2>
+                    <p>I'm Giovanni, and I'm the main designer here at Dendra. I'm a funny guy who likes cars, especially the gt86. I like videogames and basketball. I also enjoy listening to rap music.</p>
+                </div>
+            </div>
+            <div class="person mottocon">
+                <img src="/assets/dmora.png"/>
+                <div class="pdescr">
+                    <h2>Davide Mora</h2>
+                    <p>I'm Davide, and I'm the developer and (in part) a designer here at Dendra. I really like computers, especially programming and messing with operating systems. Arch Linux is my favourite distro (just in case you didnt understand :]) and because of this I decided to fork our products (DendrOS and Dendra Server) directly from its repos, providing to you the most secure and (yes, we did it!) stable infrastructure. P.S.: i use arch btw</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="mainfoot">
+            <ul>
+                <li class="footlinks">
+                    <a href="https://instagram.com/thedendra">
+                        <div>
+                            <img src="../assets/instagram.png"/>
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/thedendra">
+                        <div>
+                            <img src="../assets/twitter.png"/>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCPphIyQRmHFeTqxh99kYq2g">
+                        <div>
+                            <img src="../assets/youtube.png"/>
+                        </div>
+                    </a>
+                    <a href="https://github.com/thedendra">
+                        <div>
+                            <img src="../assets/github.png"/>
+                        </div>
+                    </a>
+                    <a href="mailto:greenhouse.project.ghp@gmail.com">
+                        <div>
+                            <img src="../assets/email.png"/>
+                        </div>
+                    </a>
+                </li>
+                <li class="foottext">
+                    <h2>Contributors:</h2>
+                    <p>Ginevra Astori</p>
+                    <p>Alice Belotti</p>
+                    <p>Giovanni Gotti</p>
+                    <p>Davide Mora</p>
+                </li>
+                <li class="footdiscl">
+                    <p>This project is fully open-source.<br>Visit our GitHub page to use our code!</p>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <!--<ul class="ulli">
+            <li class="llimg">
+                <img class="navimg" src="../assets/greenhouse_smalllogo_croped.png"/>
+            </li>
+            <li class="lli"><a>What</a></li>
+            <li class="lli"><a>Why</a></li>
+            <li class="lli"><a>How</a></li>
+            <li class="lli"><a>Who</a></li>
+            
+            <button class="buynowli">Discover Products</button>
+        </ul>-->
+
+        <ul class="ulli"> <!---->
+            <li class="llimg" onclick="homepage()">
+                <img class="navimg" src="/assets/greenhouse_smalllogo_croped.png"/>
+            </li>
+            <li class="lli"><a href="/what/">What</a></li>
+            <li class="lli"><a href="/why/">Why</a></li>
+            <li class="lli"><a href="/how/">How</a></li>
+            <li class="lli"><a href="/who/">Who</a></li>
+            
+            <button class="buynowli" onclick="window.location.href = '/discprs/'">Discover Products</button>
+        </ul>
+
+        <ul class="ullimob" onmousewheel="hdmbbar(), hdmbbartxt(), clrmbmenu()">
+            <!--<li class="llimgmob">
+                <img class="navimg menumob" src="../assets/menumob.png">
+            </li>-->
+            <li class="llimob">
+                <a id="mobmenush" onclick="shwmbbar(), shwmbbartxt(), mobmenutxtpad(4)">Δένδρα</a>
+            </li>
+        </ul>
+
+        <ul id="mobshwn"  onclick="hdmbbar(), hdmbbartxt(), clrmbmenu()">
+            <li id="xtxt" class="txtt">
+                <a>What</a>
+            </li>
+            <li id="xtxt1" class="txtt">
+                <a>Why</a>
+            </li>
+            <li id="xtxt2" class="txtt">
+                <a>How</a>
+            </li>
+            <li id="xtxt3" class="txtt">
+                <a>Who</a>
+            </li>
+        </ul>
+
+        <div id="cookies">
+            <h1 class="cook cookhea" id="cookhea">We don't use third parts cookies.</h1>
+            <p class="cook cookpar" id="cookpar">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button id="cookbut" onclick="cookieCheat('hide')">I understood</button>
+        </div>
+        
+    </body>
+</html>

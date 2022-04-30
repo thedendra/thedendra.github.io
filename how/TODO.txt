@@ -1,0 +1,9 @@
+||||||||    ||||    |||||      ||||
+   ||     |||  |||  ||  ||   |||  |||
+   ||     ||    ||  ||   ||  ||    ||
+   ||     |||  |||  ||  ||   |||  |||
+   ||       ||||    |||||      ||||
+
+
+html | css | (js) :
+   create the company's cover and put it as first item in '.maincon'

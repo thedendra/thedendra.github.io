@@ -1,0 +1,162 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Permanent+Marker&display=swap');
+
+:root {
+    --bcolor: rgb(41, 41, 41);
+    --dcolor: rgba(153, 205, 50, 0.438);
+    --parcolor: rgba(245, 245, 245, 0.5);
+
+	--nav-height: 6vh;
+	--par-fsz: 1vmax;
+	--hea-fsz: 1.5vmax;
+
+    --hea-fsz-mob: 1.5vmin;
+
+    --mob-menu-txt-pad: 0px;
+
+    --slides-dheight: 74vh;
+}
+
+html {
+    font-family: Comfortaa;
+
+    cursor: default;
+}
+
+div.maincon {
+    /*padding-top: 6vh;*/
+    background-color: whitesmoke;
+    padding-top: 0px;
+}
+
+body {
+    margin: 0px;
+    top: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prds {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.prdsrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.prd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 25vmin;
+    width: 25vmin;
+    background-color: var(--dcolor);
+    margin: 5vmin;
+    overflow: hidden;
+
+    transition: all .4s;
+
+    border-radius: 1vmin;
+}
+
+.prd:hover {
+    filter: brightness(50%);
+    transform: scale(120%);
+}
+
+.prd > img {
+    position: static;
+    transition: all .4s;
+    height: 36vmin;
+    z-index: 0;
+}
+
+.prd > p {
+    display: none;
+    z-index: 1000;
+}
+
+.prd:hover > img {
+    transform: scale(70%);
+    filter: blur(10px);
+}
+
+.prd:hover > p {
+    display: flex;
+    
+}
+
+/* ::after */
+
+div.prd:hover::after {
+    position: absolute;
+    content: "Lorem Ipsum";
+    color: var(--parcolor);
+    font-size: x-large;
+    padding: 2vmin;
+
+    align-self: flex-end;
+}
+
+div.dendros:hover::after {
+    content: "DendrOS";
+}
+
+div.riza:hover::after {
+    content: "Riza";
+}
+
+div.carpos:hover::after {
+    content: "Καρπος | Carpos";
+    font-size: large;
+}
+
+div.fone:hover::after {
+    content: "Φονή | Foné";
+}
+
+
+/**/
+
+@media only screen and (max-width: 1024px) {
+    .prd {
+        pointer-events: none;
+        
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .prdsrow {
+        flex-direction: column;
+    }
+
+    .prd {
+        height: 90vw;
+        width: 90vw;
+        border-radius: 15%;
+    }
+
+    
+
+    .prd > img {
+        height: 95vw;
+    }
+
+}
+
+@keyframes prdname {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
